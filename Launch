@@ -5,8 +5,8 @@ sleep 2
 sudo apt update 
 sudo apt upgrade
 yes | sudo apt upgrade   
-sudo apt install neofetch
-sudo apt install nmap   
-sudo apt install cmatrix
-sudo apt install cowsay 
+yes | sudo apt install neofetch
+yes | sudo apt install nmap   
+yes | sudo apt install cmatrix
+yes |sudo apt install cowsay 
 neofetch
