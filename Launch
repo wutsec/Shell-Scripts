@@ -1,0 +1,12 @@
+#!/bin/bash    
+#to run, modify permissions of the script with: chmod u+x launch.sh
+sudo apt update 
+sudo apt upgrade
+yes | sudo apt upgrade   
+sudo apt install neofetch
+echo "Welcome Back Devon. Let's get started.."
+sleep 2
+sudo apt install nmap   
+sudo apt install cmatrix
+sudo apt install cowsay 
+neofetch
