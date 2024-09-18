@@ -8,5 +8,7 @@ yes | sudo apt upgrade
 yes | sudo apt install neofetch
 yes | sudo apt install nmap   
 yes | sudo apt install cmatrix
-yes |sudo apt install cowsay 
+yes |sudo apt install cowsay
+yes | sudo apt install kitty
+yes | sudo apt install htop
 neofetch
