@@ -3,7 +3,6 @@
 echo "Fresh Install Automation Script"
 sleep 2
 sudo apt update 
-sudo apt upgrade
 yes | sudo apt upgrade   
 yes | sudo apt install neofetch
 yes | sudo apt install nmap   
