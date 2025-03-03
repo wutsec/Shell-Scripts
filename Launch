@@ -4,7 +4,7 @@ echo "Launch Script"
 sleep 2
 sudo apt update 
 yes | sudo apt upgrade   
-yes | sudo apt install neofetch
+yes | sudo apt install fastfetch
 yes | sudo apt install nmap
 yes | sudo apt install hydra
 yes | sudo apt install cmatrix
