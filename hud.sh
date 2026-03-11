@@ -28,7 +28,7 @@ sleep 0.5
 echo "(1.) Update Devices"
 echo "(2.) SSH Menu"
 echo "(3.) FTP Menu"
-echo "(4.) Upcoming"
+echo "(4.) Telnet Menu"
 echo "(5.) Upcoming"
 echo "(9.) Utilities"
 echo "(10.) Exit"
@@ -42,6 +42,8 @@ elif [ $menu_input = "2" ] ; then
     exec "/home/devon/Bash/sshmenu.sh"
 elif [ $menu_input = "3" ] ; then
     exec "/home/devon/Bash/ftpmenu.sh"
+elif [ $menu_input = "4" ] ; then
+	exec "/home/devon/Bash/telnetmenu.sh"
 elif [ $menu_input = "9" ] ; then
     exec "/home/devon/Bash/uts.sh"
 elif [ $menu_input = "10" ] ; then
