@@ -10,6 +10,7 @@ sleep 0.5
 echo ""
 echo "(1.) Ping"
 echo "(2.) Port Scan"
+echo "(3.) Disk Formatter"
 echo "(5.) Main Menu"
 echo "(10.) Exit"
 echo ""
@@ -17,13 +18,15 @@ echo ""
 read -p "Select:" menu_input
 
 if [ $menu_input = "1" ] ; then
-   read -p "Target:" ping_tar
-   exec ping -c 5 $ping_tar
+	read -p "Target:" ping_tar
+		exec ping -c 5 $ping_tar
 elif [ $menu_input = "2" ] ; then
-   read -p "Target:" nmap_tar
-   exec nmap $nmap_tar
+	read -p "Target:" nmap_tar
+		exec nmap $nmap_tar
+elif [ $menu_input = "3" ] ; then
+	exec "/home/devon/Bash/formatter.sh"
 elif [ $menu_input = "5" ] ; then
-   exec "/home/devon/Bash/hud.sh"
+	exec "/home/devon/Bash/hud.sh"
 else [ $menu_input = "10" ]
     echo "Terminating script..."
     sleep 0.5
