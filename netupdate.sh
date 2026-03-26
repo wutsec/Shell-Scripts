@@ -15,7 +15,7 @@ read -p "Would you like to continue? (y/n)" menu_input
 case $menu_input in
 	n ) echo "Terminating script..."; sleep 0.5; exec "/home/devon/Bash/hud.sh";;
 	y ) echo "Executing mass update scripts...";;
-	* ) echo "Invalid response"; exec "/home/devon/Bash/netupdate.sh";;
+	* ) echo "Invalid response"; sleep 0.5; exec "/home/devon/Bash/netupdate.sh";;
 esac
 
 # Update Local Device
