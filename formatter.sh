@@ -15,12 +15,22 @@ read -p "Display mounted disks? (y/n) " m_disks
 case $m_disks in
 	y ) "df";; # Lack of exec prefix allows script to continue, rather than terminating
 	n ) ;;
-	*) echo "Invalid response"; exec "/home/devon/Bash/formatter.sh";;
+	* ) echo "Invalid response"; exec "/home/devon/Bash/formatter.sh";;
 esac
 
 # Disk Selection
 echo ""
 read -p "Input disk: " disk_name
+
+# Optional Unmount
+echo ""
+read -p "Would you like to unmount the drive? (y/n) " u_mount
+
+case $u_mount in
+	y ) "sudo umount" $disk_name
+	n ) ;;
+	* ) echo "Invalid response"; exec "/home/devon/Bash/formatter.sh";;
+esac
 
 #Format Type Selection
 echo ""
@@ -36,5 +46,4 @@ case $format_type in
 	1 ) echo ""; exec sudo mkfs.vfat -Q $disk_name;;
 	2 ) echo ""; exec sudo mkfs.ntfs -Q $disk_name;;
 	3 ) echo ""; exec sudo mkfs.exfat -Q $disk_name;;
-	* ) echo ""; echo "Invalid selection"; sleep 0.5; exec "/home/devon/Bash/formatter.sh";;
-esac
+	* ) echo ""; echo "Invalid selection"; sleep 0.5; exec "/home/devon/Bash/formatte
