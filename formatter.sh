@@ -27,7 +27,7 @@ echo ""
 read -p "Would you like to unmount the drive? (y/n) " u_mount
 
 case $u_mount in
-	y ) "sudo umount" $disk_name
+	y ) "umount" $disk_name;;
 	n ) ;;
 	* ) echo "Invalid response"; exec "/home/devon/Bash/formatter.sh";;
 esac
@@ -46,4 +46,5 @@ case $format_type in
 	1 ) echo ""; exec sudo mkfs.vfat -Q $disk_name;;
 	2 ) echo ""; exec sudo mkfs.ntfs -Q $disk_name;;
 	3 ) echo ""; exec sudo mkfs.exfat -Q $disk_name;;
-	* ) echo ""; echo "Invalid selection"; sleep 0.5; exec "/home/devon/Bash/formatte
+	* ) echo ""; echo "Invalid selection"; sleep 0.5; exec "/home/devon/Bash/formatter.sh";;
+esac
