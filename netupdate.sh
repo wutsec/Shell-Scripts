@@ -33,4 +33,10 @@ echo "Updating Dell Poweredge T310"
 sleep 0.5
 ssh devon@192.168.1.19 'sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt autoclean'
 
+#Update Dell Poweredge R210
+clear
+echo "Updating Dell Poweredge R210"
+sleep 0.5
+ssh devon@192.168.1.21 'sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt autoclean'
+
 exec "/home/devon/Bash/hud.sh"
