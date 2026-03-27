@@ -10,17 +10,20 @@ sleep 0.5
 echo ""
 echo "(1.) Raspberry Pi"
 echo "(2.) PowerEdge T310"
+echo "(3.) Poweredge R210"
 echo "(5.) Exit"
 echo ""
 
 read -p "Select:" menu_input
 
 if [ $menu_input = "1" ] ; then
-    exec ftp 192.168.1.5
+	exec ftp 192.168.1.5
 elif [ $menu_input = "2" ] ; then
-    exec ftp @192.168.1.42
+	exec ftp 192.168.1.21
+elif [ $menu_input = "3" ] ; then
+	exec ftwp 192.168.1.19	
 else [ $menu_input = "5" ]
-    echo "Terminating script..."
-    sleep 0.5
-    exec "/home/devon/Bash/hud.sh"
+	echo "Terminating script..."
+	sleep 0.5
+	exec "/home/devon/Bash/hud.sh"
 fi
