@@ -1,4 +1,4 @@
-#!/bin/bash
+!/bin/bash
 # To make executable, modify permissions of the script with: chmod u+x sshmenu.sh
 # Shell script SSH menu for local Linux machines
 sleep 0.5
@@ -10,17 +10,20 @@ sleep 0.5
 echo ""
 echo "(1.) Raspberry Pi"
 echo "(2.) PowerEdge T310"
+echo "(3.) Poweredge R210"
 echo "(5.) Exit"
 echo ""
 
 read -p "Select:" menu_input
 
 if [ $menu_input = "1" ] ; then
-    exec ssh devon@192.168.1.5
+	exec ssh devon@192.168.1.5
 elif [ $menu_input = "2" ] ; then
-    exec ssh devon@192.168.1.42
+	exec ssh devon@192.168.1.19
+elif [ $menu_input = "3" ] ; then
+	exec ssh devon@192.168.1.21
 else [ $menu_input = "5" ]
-    echo "Terminating script..."
-    sleep 0.5
-    exec "/home/devon/Bash/hud.sh"
+	echo "Terminating script..."
+	sleep 0.5
+	exec "/home/devon/Bash/hud.sh"
 fi
