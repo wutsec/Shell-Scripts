@@ -1,4 +1,4 @@
-!/bin/bash
+#!/bin/bash
 # To make executable, modify permissions of the script with: chmod u+x sshmenu.sh
 # Shell script SSH menu for local Linux machines
 sleep 0.5
