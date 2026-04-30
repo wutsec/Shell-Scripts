@@ -11,4 +11,4 @@ yes | sudo apt install cmatrix
 yes | sudo apt install cowsay
 yes | sudo apt install kitty
 yes | sudo apt install htop
-neofetch
+fastfetch
