@@ -19,7 +19,7 @@ read -p "Select:" menu_input
 if [ $menu_input = "1" ] ; then
 	exec ssh devon@192.168.1.5
 elif [ $menu_input = "2" ] ; then
-	exec ssh -p devon@192.168.1.19:2222
+	exec ssh -p devon@192.168.1.19:2222 #Utilizes port 2222 on home network. Remove if necessary.
 elif [ $menu_input = "3" ] ; then
 	exec ssh devon@192.168.1.21
 else [ $menu_input = "5" ]
