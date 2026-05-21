@@ -11,7 +11,7 @@ echo ""
 echo "(1.) Ping"
 echo "(2.) Port Scan"
 echo "(3.) Disk Formatter"
-echo "(5.) Main Menu"
+echo "(4.) Install Toolkit"
 echo "(10.) Exit"
 echo ""
 
@@ -25,11 +25,10 @@ elif [ $menu_input = "2" ] ; then
 		exec nmap $nmap_tar
 elif [ $menu_input = "3" ] ; then
 	exec "/home/devon/Bash/formatter.sh"
-elif [ $menu_input = "5" ] ; then
-	exec "/home/devon/Bash/hud.sh"
+elif [ $menu_input = "4" ] ; then
+	exec "/home/devon/Bash/toolkit.sh"
 else [ $menu_input = "10" ]
     echo "Terminating script..."
     sleep 0.5
-    exit 1
-    exec "/home/devon/Bash/uts.sh"
+    exec "/home/devon/Bash/hud.sh"
 fi
