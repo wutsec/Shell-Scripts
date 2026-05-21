@@ -19,6 +19,6 @@ read -p 'Install prerequisite packages? (y/n) ' u_prompt
 
 case $u_prompt in
 	y ) sudo apt update; sudo apt upgrade; sudo apt install nmap -y; pip install hydra-core --upgrade; sudo apt install libimage-exiftool-perl -y;;
-	n ) ;;
+	n ) exec '/home/devon/Bash/hud.sh';;
 	* ) echo 'Invalid Response'; exec '/home/devon/Bash/toolkit.sh';;
 esac
