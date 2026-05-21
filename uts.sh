@@ -12,6 +12,7 @@ echo "(1.) Ping"
 echo "(2.) Port Scan"
 echo "(3.) Disk Formatter"
 echo "(4.) Install Toolkit"
+echo "(5.) Extract Metadata"
 echo "(10.) Exit"
 echo ""
 
@@ -27,6 +28,8 @@ elif [ $menu_input = "3" ] ; then
 	exec "/home/devon/Bash/formatter.sh"
 elif [ $menu_input = "4" ] ; then
 	exec "/home/devon/Bash/toolkit.sh"
+elif [ $menu_input = "5" ] ; then
+	exec "/home/devon/Bash/metdat.sh"
 else [ $menu_input = "10" ]
     echo "Terminating script..."
     sleep 0.5
