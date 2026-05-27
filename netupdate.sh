@@ -10,7 +10,7 @@ sleep 0.5
 
 # Prompt
 echo ""
-read -p "Would you like to continue? (y/n)" menu_input
+read -p "Would you like to continue? (y/n) " menu_input
 
 case $menu_input in
 	n ) echo "Terminating script..."; sleep 0.5; exec "/home/devon/Bash/hud.sh";;
