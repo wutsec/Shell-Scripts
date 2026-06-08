@@ -19,7 +19,7 @@ echo ""
 read -p "Select:" menu_input
 
 if [ $menu_input = "1" ] ; then
-	read -p "Target:" ping_tar
+	read -p "Target: " ping_tar
 		exec ping -c 5 $ping_tar
 elif [ $menu_input = "2" ] ; then
 	read -p "Target:" nmap_tar
