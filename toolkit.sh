@@ -18,7 +18,7 @@ echo ''
 read -p 'Install prerequisite packages? (y/n) ' u_prompt
 
 case $u_prompt in
-	y ) sudo apt update; sudo apt upgrade; sudo apt install nmap -y; sudo apt install hydra; sudo apt install libimage-exiftool-perl -y;;
+	y ) sudo apt update; sudo apt upgrade; sudo apt install nmap -y; sudo apt install hydra; sudo apt install libimage-exiftool-perl; sudo apt install smartmontools -y;;
 	n ) exec '/home/devon/Bash/hud.sh';;
 	* ) echo 'Invalid Response';sleep 0.5; exec '/home/devon/Bash/toolkit.sh';;
 esac

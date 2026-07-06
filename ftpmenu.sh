@@ -19,9 +19,9 @@ read -p "Select:" menu_input
 if [ $menu_input = "1" ] ; then
 	exec ftp 192.168.1.5
 elif [ $menu_input = "2" ] ; then
-	exec ftp 192.168.1.21
+	exec ftp 192.168.1.19
 elif [ $menu_input = "3" ] ; then
-	exec ftwp 192.168.1.19	
+	exec ftwp 192.168.1.13	
 else [ $menu_input = "5" ]
 	echo "Terminating script..."
 	sleep 0.5

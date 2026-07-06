@@ -37,6 +37,6 @@ ssh -p 2222 devon@192.168.1.19 "sudo apt update && sudo apt upgrade -y && sudo a
 clear
 echo "Updating Dell Poweredge R210"
 sleep 0.5
-ssh devon@192.168.1.21 "sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt autoclean"
+ssh devon@192.168.1.13 "sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt autoclean"
 
 exec "/home/devon/Bash/hud.sh"

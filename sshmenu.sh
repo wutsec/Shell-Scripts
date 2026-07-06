@@ -21,7 +21,7 @@ if [ $menu_input = "1" ] ; then
 elif [ $menu_input = "2" ] ; then
 	exec ssh -p 2222 devon@192.168.1.19
 elif [ $menu_input = "3" ] ; then
-	exec ssh devon@192.168.1.21
+	exec ssh devon@192.168.1.13
 else [ $menu_input = "5" ]
 	echo "Terminating script..."
 	sleep 0.5

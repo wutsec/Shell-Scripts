@@ -34,7 +34,7 @@ echo "(9.) Utilities"
 echo "(10.) Exit"
 echo ""
 
-read -p "Select:" menu_input
+read -p "Select: " menu_input
 
 if [ $menu_input = "1" ] ; then
     exec "/home/devon/Bash/netupdate.sh"

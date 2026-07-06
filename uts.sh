@@ -13,16 +13,17 @@ echo "(2.) Port Scan"
 echo "(3.) Disk Formatter"
 echo "(4.) Install Toolkit"
 echo "(5.) Extract Metadata"
+echo "(6.) Disk Health"
 echo "(10.) Exit"
 echo ""
 
-read -p "Select:" menu_input
+read -p "Select: " menu_input
 
 if [ $menu_input = "1" ] ; then
 	read -p "Target: " ping_tar
 		exec ping -c 5 $ping_tar
 elif [ $menu_input = "2" ] ; then
-	read -p "Target:" nmap_tar
+	read -p "Target: " nmap_tar
 		exec nmap $nmap_tar
 elif [ $menu_input = "3" ] ; then
 	exec "/home/devon/Bash/formatter.sh"
@@ -30,6 +31,8 @@ elif [ $menu_input = "4" ] ; then
 	exec "/home/devon/Bash/toolkit.sh"
 elif [ $menu_input = "5" ] ; then
 	exec "/home/devon/Bash/metdat.sh"
+elif [ $menu_input = "6" ] ; then
+	exec "/home/devon/Bash/diskhealth.sh"
 else [ $menu_input = "10" ]
     echo "Terminating script..."
     sleep 0.5
